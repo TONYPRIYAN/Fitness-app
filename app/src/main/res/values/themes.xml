@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ShapeShift" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="android:windowBackground">@color/my_dark_background</item>
+        <item name="android:colorBackground">@color/my_dark_background</item>
+        <item name="android:statusBarColor">@color/my_dark_status_bar</item>
+        <item name="android:navigationBarColor">@color/my_dark_navigation_bar</item>
+        <!-- Add other customizations as needed -->
+    </style>
+
+    <style name="Theme.ShapeShift" parent="Base.Theme.ShapeShift" />
+
+</resources>

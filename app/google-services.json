@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "10695233189",
+    "project_id": "shapeshift-23c91",
+    "storage_bucket": "shapeshift-23c91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10695233189:android:430c67affe07786059474c",
+        "android_client_info": {
+          "package_name": "com.example.shapeshift"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI08zyj9Vf5x60BBnecWDJiOENjJfnq9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

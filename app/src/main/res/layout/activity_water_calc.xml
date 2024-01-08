@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="#3B8BEB"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="311dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="31dp"
+        android:background="#c4dbf6"
+        android:hint="Enter weight (kg)"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Spinner
+        android:id="@+id/spinnerActivity"
+        android:layout_width="349dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/editTextWeight"
+        android:layout_marginBottom="48dp"
+        android:background="#e7e3d4"
+        android:hint="Select activity level"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerClimate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerClimate"
+        android:layout_width="349dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/spinnerActivity"
+        android:layout_marginBottom="28dp"
+        android:background="#E7E3D4"
+        android:hint="Select climate"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerActivity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerActivity" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="311dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/spinnerClimate"
+        android:layout_marginBottom="32dp"
+        android:background="#B23850"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewResult"
+        app:layout_constraintEnd_toEndOf="@+id/editTextWeight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextWeight" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="349dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btnCalculate"
+        android:layout_marginBottom="92dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerClimate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerClimate" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="207dp"
+        android:layout_height="154dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/water5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

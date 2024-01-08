@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShapeShift"
+        tools:targetApi="31">
+        <activity
+            android:name=".WaterCalc"
+            android:exported="false" />
+        <activity
+            android:name=".waterintake"
+            android:exported="false" />
+        <activity
+            android:name=".Aboutus"
+            android:exported="false" />
+        <activity
+            android:name=".Calorie"
+            android:exported="false" />
+        <activity
+            android:name=".Weightlog"
+            android:exported="false" />
+        <activity
+            android:name=".exercises"
+            android:exported="false" />
+        <activity
+            android:name=".abs"
+            android:exported="false" />
+        <activity
+            android:name=".arms"
+            android:exported="false" />
+        <activity
+            android:name=".legs"
+            android:exported="false" />
+        <activity
+            android:name=".shoulder"
+            android:exported="false" />
+        <activity
+            android:name=".back"
+            android:exported="false" />
+        <activity
+            android:name=".chest"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workoutlog"
+            android:exported="false" />
+        <activity
+            android:name=".weightj"
+            android:exported="false" />
+        <activity
+            android:name=".workout2j"
+            android:exported="false" />
+        <activity
+            android:name=".Workoutj"
+            android:exported="false" />
+        <activity
+            android:name=".bmij"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".introm"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".NotificationReceiver"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>
